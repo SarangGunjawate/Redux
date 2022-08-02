@@ -46,11 +46,11 @@
     margin-left: 10%;
 }
 .item {
-  float: left;
   display: inline-block;
   width: 120px;
   padding: 20px;
   height: 70px;
+  float: left;
 }
 .add-to-cart img{
   width: 80px;
@@ -59,7 +59,6 @@
     top: 1%;
 }
 .cart-count{
-  
     position: absolute;
     right: 10px;
     top: 12px;

@@ -1,11 +1,6 @@
-import React from 'react'
+import {combineReducers} from 'redux'
+import cartitems from './reducer'
 
-function index() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default index
+export default combineReducers({
+  cartitems
+})
