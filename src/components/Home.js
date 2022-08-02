@@ -1,11 +1,10 @@
 import React from "react";
 
 function Home(props) {
+  console.log('Home',props)
   return (
     <div>
-      <div className="add-to-cart">
-        <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-add-to-cart--icon-design-png-image_4269419.jpg" />
-      </div>
+      
       <h1>home component</h1>
       <div className="cart-wrapper">
         <div className="img-wrapper item">
@@ -22,6 +21,14 @@ function Home(props) {
             }}
           >
             Add To Cart
+          </button>
+
+          <button
+            onClick={() => {
+              props.removeToCartHandler();
+            }}
+          >
+            Remove To Cart
           </button>
         </div>
       </div>
